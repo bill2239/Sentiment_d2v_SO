@@ -32,8 +32,6 @@ def get_doc2vec_file(fnames):
 	model_dbow.build_vocab(sentences_file)
 	print 'building vocab is complete'
 	
-	#model.intersect_word2vec_format('/Users/dcard/Documents/wikidump/ptt.dcard.300.text.bin', binary=True)
-	# model.train(sentences_file)
    
 	for epoch in range(10):
 		model.train(sentences_file)
